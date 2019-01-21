@@ -1,0 +1,344 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.top{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    float: right;
+    display: flex;
+    margin-top: 50px;
+}
+
+.topnav a{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topnav a:hover{
+    border-bottom: 3px solid #0000ff;
+}
+
+.topnav .icon{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .main-welcome{
+    background: #000;
+    text-align: center;
+    padding: 190px 0 410px 0 ;
+}
+
+main .main-welcome p {
+    color: #999999;
+    font-size: 20px;
+}
+
+main .main-welcome h1 {
+    color: #999999;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+.ramy-blue{
+    color: #0000ff;
+}
+
+.bold-font{
+    font-weight: bold;
+}
+
+.wrapper{
+    width: 76%;
+    margin: 0 auto;
+}
+main .main-about{
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.about-right{
+    margin-left: 175px;
+}
+
+.about-right h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 3px solid #0000ff;
+    padding-bottom: 20px;
+}
+
+.about-right p{
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
+}
+
+.about-right li{
+    background: url(img/.png) 0px no-repeat;
+    padding-left: 25px;
+    color: #6c6c6c;
+    margin-top: 10px;
+}
+ 
+.mw-100{
+    min-width: 100%;
+}
+
+.my-projects{
+  background: #000;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: #fff;
+}
+
+.my-projects h1{
+  font-size: 44px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.line{
+  width: 100px;
+  height: 3px;
+  background: #0000ff;
+  margin: 0 auto;
+  margin-bottom: 85px;
+}
+
+.photo{
+  background: #fff;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.project-cards{
+  display: flex;
+}
+
+.name{
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.position{
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.about-position{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card{
+  margin: 0 40px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    main .main-welcome{
+        padding: 100px 0 100px 0;
+    }
+
+    main .main-welcome p{
+        font-size: 18px;
+
+    }
+     
+     main .main-welcome h1{
+        font-size: 30px;
+    }   
+    
+    .mw-100{
+    max-width: 100%;
+    }
+
+    .main-about{
+        flex-direction: column;
+    }
+    
+    .about-right{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .about-right ul{
+        margin: 0 25%;
+    }
+
+    .about-right li{
+        text-align: left;
+    }
+    .about-right h1{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 1060px) {
+    .topnav{
+        float: right;
+    }
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    
+ 
+    
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        right: 0px;
+    }
+    header.topnav.responsive{
+        height: 500px;
+    }
+    .topnav.responsive a.icon{
+      position: absolute;
+      top: -50px;
+      right: 0px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: right;
+    }
+
+
+
+
+
+    main .main-welcome{
+        padding: 100px 0 100px 0;
+    }
+
+    main .main-welcome p{
+        font-size: 18px;
+
+    }
+     
+     main .main-welcome h1{
+        font-size: 30px;
+    }   
+    
+    .mw-100{
+    max-width: 100%;
+    }
+
+    .main-about{
+        flex-direction: column;
+    }
+    
+    .about-right{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .about-right ul{
+        margin: 0 25%;
+    }
+
+    .about-right li{
+        text-align: left;
+    }
+    .about-right h1{
+        font-size: 20px;
+    }
+
+
+
+
+.project-cards{
+  flex-direction: column;
+}
+
+.card{
+  margin: 0 20% 5% 20%;
+}
+
+
+}
+
+
+@media screen and (max-width: 550px){
+  .about-right ul{
+        margin: 0px;
+    }   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
